@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>InnovaTecno Hub</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* HEADER */
+header{
+    background:#1e3a5f;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* MENU */
+nav{
+    background:white;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:15px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a{
+    text-decoration:none;
+    color:#1e3a5f;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#3b82f6;
+}
+
+/* CONTENEDOR */
+.container{
+    width:85%;
+    margin:30px auto;
+}
+
+/* TARJETAS */
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* IMÁGENES */
+..img-grid{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.img-grid img{
+    width:280px;        /* tamaño más pequeño y elegante */
+    height:180px;       /* mantiene proporción uniforme */
+    object-fit:cover;   /* recorta sin deformar */
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+/* efecto bonito al pasar el mouse */
+.img-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* FORMULARIO */
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input, select, textarea{
+    margin:8px 0;
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#1e3a5f;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#3b82f6;
+}
+
+/* FOOTER */
+footer{
+    background:#1e3a5f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* REDES */
+.social a{
+    margin:10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>InnovaTecno Hub</h1>
+    <p>Explorando las tecnologías que transforman el presente y el futuro</p>
+</header>
+
+<nav>
+    <a href="#auto">Automatización</a>
+    <a href="#app">App Inventor</a>
+    <a href="#ia">Inteligencia Artificial</a>
+    <a href="#form">Opinión</a>
+</nav>
+
+<div class="container">
+
+    <!-- AUTOMATIZACION -->
+    <div class="card" id="auto">
+        <h2>Automatización</h2>
+        <p>
+        La automatización consiste en el uso de sistemas tecnológicos para ejecutar tareas de manera automática,
+        reduciendo la intervención humana. Es clave en la industria moderna y en la transformación digital.
+        </p>
+
+        <p>
+        Se utiliza en fábricas con robots industriales, en sistemas bancarios, en plataformas digitales y en
+        procesos administrativos. Su objetivo principal es aumentar la eficiencia, reducir errores y optimizar
+        el tiempo de trabajo.
+        </p>
+
+        <p>
+        Ventajas:
+        - Mayor productividad  
+        - Reducción de costos  
+        - Menos errores humanos  
+        - Procesos más rápidos  
+        </p>
+
+        <div class="img-grid">
+            <img src="automatizacion.jpg">
+            <img src="automatizacion2.jpg">
+        </div>
+    </div>
+
+    <!-- APP INVENTOR -->
+    <div class="card" id="app">
+        <h2>App Inventor</h2>
+        <p>
+        App Inventor es una plataforma que permite desarrollar aplicaciones móviles de forma sencilla mediante
+        bloques visuales. Fue creada para facilitar el aprendizaje de la programación.
+        </p>
+
+        <p>
+        Es ideal para estudiantes, ya que no requiere escribir código complejo. Permite desarrollar aplicaciones
+        como juegos, herramientas educativas, apps informativas y más.
+        </p>
+
+        <p>
+        Características principales:
+        - Interfaz visual por bloques  
+        - Fácil de aprender  
+        - Permite crear apps funcionales  
+        - Ideal para principiantes  
+        </p>
+
+        <div class="img-grid">
+            <img src="app.jpg">
+            <img src="inventor.jpg"
+        </div>
+    </div>
+
+    <!-- IA -->
+    <div class="card" id="ia">
+        <h2>Inteligencia Artificial</h2>
+        <p>
+        La Inteligencia Artificial (IA) permite a las máquinas aprender y tomar decisiones a partir de datos.
+        Es una de las tecnologías más importantes en la actualidad.
+        </p>
+
+        <p>
+        Se utiliza en asistentes virtuales, reconocimiento de voz, sistemas de recomendación, medicina,
+        educación y vehículos autónomos.
+        </p>
+
+        <p>
+        Tipos de IA:
+        - IA débil (tareas específicas)  
+        - IA fuerte (simula inteligencia humana)  
+        </p>
+
+        <p>
+        Beneficios:
+        - Automatiza tareas complejas  
+        - Mejora la toma de decisiones  
+        - Analiza grandes cantidades de datos  
+        </p>
+
+        <div class="img-grid">
+            <img src="IA.jpg">
+            <img src="robot.jpg"
+        </div>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="card" id="form">
+        <h2>Tu opinión</h2>
+        <form>
+            <label>Nombre:</label>
+            <input type="text" placeholder="Tu nombre">
+
+            <label>¿Qué tecnología te gustó más?</label>
+            <select>
+                <option>Automatización</option>
+                <option>App Inventor</option>
+                <option>Inteligencia Artificial</option>
+            </select>
+
+            <label>¿Te gustó la página?</label>
+            <select>
+                <option>Sí</option>
+                <option>No</option>
+            </select>
+
+            <label>Comentarios:</label>
+            <textarea rows="4"></textarea>
+
+            <button>Enviar</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>Síguenos en redes sociales:</p>
+    <div class="social">
+        <a href="#">Facebook @innovahub</a>
+        <a href="#">Instagram @innovahub</a>
+        <a href="#">Twitterb @innovahub</a>
+    </div>
+    <p>© 2026 InnovaTecno</p>
+</footer>
+
+</body>
+</html>
